@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  width: 100%;
+  height: 100dvh;
+  padding: 10px;
+}
+.app_box {
+  background: white;
+  width: 80%;
+  max-width: 650px;
+  margin: 40px auto 70px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 30px;
+  height: 30px;
+}
+.input_buttom {
+  display: flex;
+  background: #d8d8d89a;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.input_buttom input {
+  flex: 1;
+  background: transparent;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  padding-left: 15px;
+}
+button {
+  position: absolute;
+  right: 1px;
+  border: none;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: #080ceb;
+  color: aliceblue;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.988);
+}
+ul li {
+  list-style: none;
+  padding: 5px 40px;
+  font-size: larger;
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+ul li::before {
+  background-image: url(./images/unchecked.png);
+  content: '';
+  background-size: cover;
+  background-position: center;
+  top: 5px;
+  left: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+}
+ul li.complete {
+  text-decoration: line-through;
+  color: #4c4b4bcb;
+}
+ul li.complete::before {
+  background-image: url(./images/checked.png);
+}
+ul li span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 50px;
+  background: #ddb9b9fa;
+}
+ul li span:hover {
+  background: #f72323fa;
+  color: aliceblue;
+}
+ul li span:active {
+  background: #f72323fa;
+  color: aliceblue;
+  transform: scale(0.92);
+}
