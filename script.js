@@ -3,8 +3,7 @@
 const input_v = document.querySelector('.input_box');
 const btn = document.querySelector('.btn_field');
 const ul_bar = document.querySelector('.task_bar');
-btn.addEventListener('click', function (e) {
-  e.preventDefault();
+btn.addEventListener('click', function () {
   if (input_v.value === '') {
     alert('You must add some text');
   } else {
@@ -35,3 +34,4 @@ function getData() {
   ul_bar.innerHTML = localStorage.getItem('data');
 }
 getData();
+
